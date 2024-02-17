@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-Post-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+         
+    <div class="top">
+        <header>
+            <div class="logo"><span class="red">Muhammad</span> &nbsp; Umer</div>
+            <div>fax</div>
+            <div class="link"><img src="Img/github (1).png" alt=""><a href="https://github.com/GitHubMuhammadUmer"></a></div>
+        </header>   
+        <div class="head">
+        <div class="box1">
+            <div class="text">
+                <h1>
+                    Create Post
+                    <hr/>
+                </h1>
+            </div>
+        <div id="post-background" class="bg">
+            <textarea class="post-text" name="" id="textarea" ></textarea>
+        </div>
+
+        <div  id="items">
+            <div class="box2">
+                <div>
+                    <h1>
+                    <select onchange="setEmoji()">
+                        
+                        <option value="👍">👍</option>
+                        <option value="❤️">❤️</option>
+                        <option value="😍">😍</option>
+                        <option value="😆">😆</option>
+                        <option value="😮">😮</option>
+                        <option value="😥">😥</option>
+                        <option value="😡">😡</option>
+                    </select>
+                </h1>
+            </div>
+               
+               
+                <div onclick="changeStyle()">
+                    <h1>B</h1>
+                    
+                </div>
+                <div onclick="changeStyle()">
+                    <h1>I</h1>
+                </div>
+                <div onclick="changeStyle()">
+                    <h1>U</h1>
+                </div>
+                <div onclick="changeStyle()">
+                    <h1>¢</h1>
+                </div>
+                <div onclick="changeStyle()">
+                    <h1>€</h1>
+                </div>
+   <div>
+    <h1>
+                    <input type="range" onchange="chageSize()"></h1>
+   </div>
+</div>
+            <!-- €¥£¢ -->
+            <div class="head2">
+
+         <div class="box3">
+            <div>
+                <input type="color" onchange="chageColor()"  class="roundedImage"  >
+                <h6>TextColor</h6>
+            </div>
+
+          
+            <div>
+                <img width="20" onclick="setBackground()" src="Img/th.jpg" alt="" class="roundedImage">
+            </div>
+            <div>
+                <img width="20" onclick="setBackground()" src="Img/p.jpg" alt="" class="roundedImage">
+            </div>
+            <div>
+                <img width="20" onclick="setBackground()" src="Img/pp.jpg" alt="" class="roundedImage">
+            </div>
+            <div>
+                <img width="20" onclick="setBackground()" src="Img/multi2.jpg" alt="" class="roundedImage">
+            </div>
+            <div>
+                <input type="color" onchange="chageBGColor()"  class="roundedImage">
+                <h6>BgColor</h6>
+            </div>
+        </div>
+</div>
+<br/><br/>
+
+<!-- <div class="likes" id="likes">
+
+
+    <div class="like">
+    <div class="icn" ><i class="fa-regular fa-thumbs-up" id="likeede"></i></div>
+    <div class="like-con" ><span  id="likeed"  onclick="liked()">Like</span></div>
+   </div>
+
+   <div class="like">
+       <div class="icn"><i class="fa-regular fa-comment"></i></div>
+       <div class="like-con" id="comments" onclick="comment()">Comment</div>
+       <div class="input" id="inpt"><input type="text" placeholder="Write a comment" class="inp"></div>
+      </div>
+
+      <div class="like">
+       <div class="icn"><i class="fa-solid fa-share"></i></div>
+       <div class="like-con">Share</div>
+      </div> -->
+<div class="postButton"  id="commentbox" onclick="commentbox()">
+    <button onclick="post()" >
+        Post
+    </button>
+</div></div> 
+</div></div>
+</div>    
+<script src="app.js"></script>
+</body>
+
+</html>
